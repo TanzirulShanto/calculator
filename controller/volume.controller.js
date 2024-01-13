@@ -97,22 +97,22 @@ exports.postConeVolume = (req, res)=>{
 
 // Prism
 exports.getPrismVolumePage = (req, res)=>{
-    res.sendFile(path.join(__dirname , "/../views/volume/cuboid.html"));
+    res.sendFile(path.join(__dirname , "/../views/volume/prism.html"));
 };
 
 exports.postPrismVolume = (req, res)=>{
-    // const base = req.body.base;
-    // const width = req.body.width;
-    // const height = req.body.height;
+    const base = req.body.base;
+    const length = req.body.length;
+    const height = req.body.height;
 
-    // let baseArea = base * width;
-    // let volume = 
-    // if(isNaN(volume)){
-    //     res.send("Invalid Input.");
-    // }
-    // else{
-    //     res.send(`Volume of the Cone is ${volume} cubic unit`);
-    // }
+    let baseArea = .5 * base * height;
+    let volume = base * length;
+    if(isNaN(volume)){
+        res.send("Invalid Input.");
+    }
+    else{
+        res.send(`Volume of the Triangular Prism is ${volume} cubic unit`);
+    }
 };
 
 // cylinder

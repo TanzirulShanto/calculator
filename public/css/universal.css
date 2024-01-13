@@ -1,0 +1,13 @@
+body{
+    margin: 0px 50px;
+    background-color: aquamarine;
+}
+label{
+    margin: 20px 5px;
+}
+
+button{
+    background-color: antiquewhite;
+    border: solid 2px white;
+    color: black;
+}
